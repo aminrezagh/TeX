@@ -1,0 +1,193 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\usepackage{microtype}
+\hypersetup{colorlinks, breaklinks, urlcolor = Maroon, linkcolor = Maroon}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Aminreza Ghorbani}}
+
+\vspace{0.4em}
++98 (912) 804-3895\ \ \textbullet
+\ \ \href{mailto:aminreza369@gmail.com}{aminreza369@gmail.com}\ \ \textbullet \ \ 1990, May 30
+\end{center}
+\vspace{0.3em}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Work Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Abdal Industrial Group (Mapsa)}}
+
+	\\
+	\headerrow
+		{\emph{Designer, Rotary Equipments Department}}
+		{\emph{2014 -- Present}}
+	\begin{itemize*}
+	    \itemsep0.15em
+		\item Assisted reverse engineering of a Horizontal Centrifugal Process Pump.
+		\item Assisted reverse engineering of a Barrel Casing Pump.
+		\item Assisted reverse engineering of a Capillary Pressure Desaturator for the Core Analysis Laboratory.
+		\item Designed medium-sized water storage tanks.
+	\end{itemize*}
+\vspace{-0.3em}
+Reference: M. Hashemi\ \ $\cdotp$\ \ +98 (912) 388 9655\ \ $\cdotp$\ \ \href{mailto:h.hashemi@mapsaeng.com}{h.hashemi@mapsaeng.com}
+
+	\item
+	\headerrow
+		{\textbf{Pars Petro Kupal Kish}}
+
+	\\
+	\headerrow
+		{\emph{Project Planner, Project Control Department}}
+		{\emph{2013 -- 2014}}
+	\begin{itemize*}
+		\item Assisted planning workover operations for Salman gas field wells.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{DRG Drilling Services}}
+
+	\\
+	\headerrow
+		{\emph{Summer Intern, Drilling Department}}
+		{\emph{2012}}
+	\begin{itemize*}
+		\item Examined different methods of directional \& horizontal drilling operations in South Pars gas field to achieve higher production rates.
+	\end{itemize*}
+
+\item
+	\headerrow
+		{\textbf{South Pars Oil \& Gas Co. (P.O.G.C)}}
+
+	\\
+	\headerrow
+		{\emph{Summer Intern, Oil \& Gas Engineering Department}}
+		{\emph{2011}}
+	\begin{itemize*}
+		\item Studied reservoir data of South Pars gas field including: main production parameters, locations of wells and phase production rates.
+	\end{itemize*}
+
+\item
+	\headerrow
+		{\textbf{Tehran Oil Refinery}}
+
+	\\
+	\headerrow
+		{\emph{Summer Intern, Turbo-machinery Maintenance Workshop}}
+		{\emph{2010}}
+	\begin{itemize*}
+		\item Assisted repair and maintenance of reciprocating pumps.
+	\end{itemize*}
+\end{itemize}
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{University of Tehran}}
+		{\textbf{Tehran}}
+	\\
+	\headerrow
+		{\emph{Faculty of Mechanical Engineering, B.S. Mechanical Engineering}}
+		{\emph{2008 -- 2013}}
+	\begin{itemize*}
+		\item Thesis title: ``Reverse engineering and dynamic simulation of a Synchro-Self-Shifting (SSS) clutch''\newline
+		Adviser: A. Hannaneh
+	\end{itemize*}
+
+\end{itemize}
+\newpage
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Computer Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+    \itemsep0.3em
+	\item[Programming Languages:]
+	\CPP, Python, Wolfram Language (Mathematica)
+	\item[CAD:]
+	AutoCAD, SolidWorks
+	\item[Simulation \& Analysis:]
+	ANSYS Workbench, PumpLinx
+	\item[Project Management:]
+	Microsoft Project
+	\item[General Purpose:]
+	\LaTeX, Microsoft Office
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Languages}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+    \itemsep0.3em
+	\item[Persian:]
+	Native
+	\item[English:]
+	Full professional proficiency
+	\item[Arabic:]
+	Elementary proficiency
+\end{description*}
+\end{indentsection}
+\begin{flushright}
+    \today
+\end{flushright}
+
+\end{document}
